@@ -1,0 +1,526 @@
+<html lang="en" style="box-sizing: border-box;"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><meta name="robots" content="none"><style>
+    .hljs-link,
+    .hljs-regexp {
+      color: #0e0eff;
+    }
+    </style><style>
+    .ex:hover {
+      color: rgba(8, 8, 8, 1) !important;
+    }
+    .ey:hover {
+      fill: rgba(8, 8, 8, 1) !important;
+    }
+    .ez:hover {
+      border-color: rgba(41, 41, 41, 1) !important;
+    }
+    .gs:hover {
+      background: rgba(15, 115, 12, 1) !important;
+    }
+    .gt:hover {
+      border-color: rgba(15, 115, 12, 1) !important;
+    }
+    </style><style>
+    @media all and (min-width: 728px) and (max-width: 903.98px) {
+      .d {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .e {
+        padding: 6px 0 40px 0;
+      }
+    
+      .o {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .p {
+        border-radius: 4px;
+      }
+    
+      .v {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .an {
+        font-size: 13px;
+      }
+    
+      .ao {
+        line-height: 18px;
+      }
+    
+      .az {
+        margin-bottom: 5px !important;
+      }
+    
+      .ba {
+        margin-top: 25px !important;
+      }
+    
+      .bj {
+        padding: 0 40px !important;
+      }
+    
+      .bs {
+        font-size: 16px !important;
+      }
+    
+      .bt {
+        line-height: 24px !important;
+      }
+    
+      .cd {
+        margin-bottom: 24px !important;
+      }
+    
+      .ce {
+        margin-top: 24px !important;
+      }
+    
+      .cn {
+        display: inline-block;
+      }
+    
+      .co {
+        float: right !important;
+      }
+    
+      .cp {
+        height: 144px !important;
+      }
+    
+      .cq {
+        width: 144px !important;
+      }
+    
+      .cr {
+        margin-bottom: 0 !important;
+      }
+    
+      .dc {
+        width: 72% !important;
+      }
+    
+      .df {
+        margin-bottom: 4px !important;
+      }
+    
+      .do {
+        font-size: 14px;
+      }
+    
+      .dp {
+        line-height: 20px;
+      }
+    
+      .dx {
+        margin-left: 44px !important;
+      }
+    
+      .eb {
+        font-size: 18px !important;
+      }
+    
+      .ei {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .fk {
+        min-height: 0 !important;
+      }
+    
+      .fp {
+        width: 100% !important;
+      }
+    
+      .ft {
+        width: 88% !important;
+      }
+    
+      .fx {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .gf {
+        font-size: 24px;
+      }
+    
+      .gg {
+        line-height: 28px;
+      }
+    
+      .gy {
+        padding: 40px !important;
+      }
+    
+      .hb {
+        padding-bottom: 0 !important;
+      }
+    
+      .hc {
+        padding-top: 10px;
+      }
+    
+      .hh {
+        display: inline-block !important;
+      }
+    
+      .hm {
+        padding-top: 34px;
+      }
+    }
+    </style><style>
+    @media all and (min-width: 904px) and (max-width: 1079.98px) {
+      .f {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .g {
+        padding: 6px 0 40px 0;
+      }
+    
+      .q {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .r {
+        border-radius: 4px;
+      }
+    
+      .w {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .ap {
+        font-size: 13px;
+      }
+    
+      .aq {
+        line-height: 18px;
+      }
+    
+      .bb {
+        margin-bottom: 5px !important;
+      }
+    
+      .bc {
+        margin-top: 25px !important;
+      }
+    
+      .bk {
+        padding: 0 40px !important;
+      }
+    
+      .bu {
+        font-size: 16px !important;
+      }
+    
+      .bv {
+        line-height: 24px !important;
+      }
+    
+      .cf {
+        margin-bottom: 24px !important;
+      }
+    
+      .cg {
+        margin-top: 24px !important;
+      }
+    
+      .cs {
+        display: inline-block;
+      }
+    
+      .ct {
+        float: right !important;
+      }
+    
+      .cu {
+        height: 144px !important;
+      }
+    
+      .cv {
+        width: 144px !important;
+      }
+    
+      .cw {
+        margin-bottom: 0 !important;
+      }
+    
+      .dd {
+        width: 72% !important;
+      }
+    
+      .dg {
+        margin-bottom: 4px !important;
+      }
+    
+      .dq {
+        font-size: 14px;
+      }
+    
+      .dr {
+        line-height: 20px;
+      }
+    
+      .dy {
+        margin-left: 44px !important;
+      }
+    
+      .ec {
+        font-size: 18px !important;
+      }
+    
+      .ej {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .fl {
+        min-height: 0 !important;
+      }
+    
+      .fq {
+        width: 100% !important;
+      }
+    
+      .fu {
+        width: 88% !important;
+      }
+    
+      .fy {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .gh {
+        font-size: 24px;
+      }
+    
+      .gi {
+        line-height: 28px;
+      }
+    
+      .gz {
+        padding: 40px !important;
+      }
+    
+      .hd {
+        padding-bottom: 0 !important;
+      }
+    
+      .he {
+        padding-top: 10px;
+      }
+    
+      .hi {
+        display: inline-block !important;
+      }
+    
+      .hn {
+        padding-top: 34px;
+      }
+    }
+    </style><style>
+    @media all and (min-width: 1080px) {
+      .h {
+        background-color: rgba(242, 242, 242, 1) !important;
+      }
+    
+      .i {
+        padding: 6px 0 40px 0;
+      }
+    
+      .s {
+        border: 1px solid rgba(230, 230, 230, 1);
+      }
+    
+      .t {
+        border-radius: 4px;
+      }
+    
+      .x {
+        padding: 28px 40px 0 40px !important;
+      }
+    
+      .ar {
+        font-size: 13px;
+      }
+    
+      .as {
+        line-height: 18px;
+      }
+    
+      .bd {
+        margin-bottom: 5px !important;
+      }
+    
+      .be {
+        margin-top: 25px !important;
+      }
+    
+      .bl {
+        padding: 0 40px !important;
+      }
+    
+      .bw {
+        font-size: 16px !important;
+      }
+    
+      .bx {
+        line-height: 24px !important;
+      }
+    
+      .ch {
+        margin-bottom: 24px !important;
+      }
+    
+      .ci {
+        margin-top: 24px !important;
+      }
+    
+      .cx {
+        display: inline-block;
+      }
+    
+      .cy {
+        float: right !important;
+      }
+    
+      .cz {
+        height: 144px !important;
+      }
+    
+      .da {
+        width: 144px !important;
+      }
+    
+      .db {
+        margin-bottom: 0 !important;
+      }
+    
+      .de {
+        width: 72% !important;
+      }
+    
+      .dh {
+        margin-bottom: 4px !important;
+      }
+    
+      .ds {
+        font-size: 14px;
+      }
+    
+      .dt {
+        line-height: 20px;
+      }
+    
+      .dz {
+        margin-left: 44px !important;
+      }
+    
+      .ed {
+        font-size: 18px !important;
+      }
+    
+      .ek {
+        padding: 20px 40px 40px !important;
+      }
+    
+      .fm {
+        min-height: 0 !important;
+      }
+    
+      .fr {
+        width: 100% !important;
+      }
+    
+      .fv {
+        width: 88% !important;
+      }
+    
+      .fz {
+        padding: 0px 40px 60px !important;
+      }
+    
+      .gj {
+        font-size: 24px;
+      }
+    
+      .gk {
+        line-height: 28px;
+      }
+    
+      .ha {
+        padding: 40px !important;
+      }
+    
+      .hf {
+        padding-bottom: 0 !important;
+      }
+    
+      .hg {
+        padding-top: 10px;
+      }
+    
+      .hj {
+        display: inline-block !important;
+      }
+    
+      .ho {
+        padding-top: 34px;
+      }
+    }
+    </style><style>
+    @media all and (max-width: 551.98px) {
+      .aj {
+        font-size: 11px;
+      }
+    
+      .ak {
+        line-height: 14px;
+      }
+    
+      .dk {
+        font-size: 16px;
+      }
+    
+      .dl {
+        line-height: 24px;
+      }
+    
+      .gb {
+        font-size: 18px;
+      }
+    
+      .gc {
+        line-height: 21px;
+      }
+    }
+    </style><style>
+    @media all and (min-width: 552px) and (max-width: 727.98px) {
+      .al {
+        font-size: 11px;
+      }
+    
+      .am {
+        line-height: 14px;
+      }
+    
+      .dm {
+        font-size: 16px;
+      }
+    
+      .dn {
+        line-height: 24px;
+      }
+    
+      .gd {
+        font-size: 18px;
+      }
+    
+      .ge {
+        line-height: 21px;
+      }
+    }
+    </style><link id="glyph_preload_link" rel="preload" as="style" type="text/css" href="https://glyph.medium.com/css/unbound.css"><link id="glyph_link" rel="stylesheet" type="text/css" href="https://glyph.medium.com/css/unbound.css"></head><body style="margin: 0; padding: 0;"><div class="c d e f g h i" style="background-color: rgba(255, 255, 255, 1);"><table class="j k l m" role="presentation" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; width: 100%; max-width: 680px;" width="100%"><tbody><tr><td class="l n" style="width: 100%; min-width: 100%;" width="100%"><img src="https://medium.com/_/stat?event=email.opened&amp;emailId=68823933-8dca-4b0c-858d-8eb7f376a447&amp;source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" width="1" height="1" alt><div class="a b" style="font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: rgba(25, 25, 25, 1);"><div class="c o p q r s t" style="background-color: rgba(255, 255, 255, 1);"><div class="u v w x" style="padding: 12px 27px 0 27px;"><div class="y" style="text-align: left;"><div class><div class="z ab" style="display: inline-block; vertical-align: middle;"><a href="https://medium.com/@starky374?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none;"><img alt="Starky Paulino" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/0*DKL5Gv4XePzRmoJh.jpg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z ah ab" style="display: inline-block; vertical-align: middle; padding-left: 9px;"><div class="ai aj ak al am an ao ap aq ar as at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><a href="https://medium.com/@starky374?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none;">Stories for <span style="font-weight:700">Starky Paulino</span></a></div><div class="ai aj ak al am an ao ap aq ar as at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><span class="ai aj ak al am an ao ap aq ar as au" style="font-weight: 400; color: rgba(117, 117, 117, 1);"><a href="https://medium.com/@starky374?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none;">@starky374</a></span><span class="ai aj ak al am an ao ap aq ar as av" style="font-weight: 400; color: rgba(26, 137, 23, 1);"><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a href="https://medium.com/@starky374?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none;">Member</a></span></div></div></div></div><div class="ay az ba bb bc bd be bf bg" style="margin-bottom: 8px; margin-top: 22px; text-align: center;"><a href="https://medium.com/?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" aria-label="Medium homepage link" style="color: inherit; text-decoration: none;"><img alt="Medium daily digest" class="l bh" src="https://miro.medium.com/max/1200/4*pUIfRlZh07mLXKHFllcZSw.png" width="600" style="width: 100%; min-width: 400px;"></a></div></div><div class="bi bj bk bl" style="padding: 0 27px;"><div class="bm bn l" style="width: 100%; border-bottom: 1px solid rgba(117, 117, 117, 1); height: 0px;"></div><div class="bo bp" style="margin-bottom: 11px; margin-top: 11px;"><p class="bq br bs bt bu bv bw bx by at bz" style="margin: 0; color: rgba(41, 41, 41, 1); font-weight: 700; font-size: 18px; line-height: 24px; text-transform: uppercase;">Today&#x27;s highlights</p></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@piyushkesarwani72/9-successful-habits-you-must-follow-to-become-unstoppable-48e44d73f577?source=email-4cbe58367505-1679212103413-digest.reader--48e44d73f577----0-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="bvlKPSMI" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*1Axhc8wlCItt1mkl); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@piyushkesarwani72?source=email-4cbe58367505-1679212103413-digest.reader--48e44d73f577----0-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="Piyush kesarwani" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*Cu5IMaitETB1mxD0VgRQTg.png" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@piyushkesarwani72?source=email-4cbe58367505-1679212103413-digest.reader--48e44d73f577----0-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">Piyush kesarwani</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">3 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@piyushkesarwani72/9-successful-habits-you-must-follow-to-become-unstoppable-48e44d73f577?source=email-4cbe58367505-1679212103413-digest.reader--48e44d73f577----0-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="bvlKPSMI">9 successful habits you must follow to become unstoppable</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Successful daily habits</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@anjanayraina326/leetcode-the-road-from-0-to-450-questions-f8503d1fd0ee?source=email-4cbe58367505-1679212103413-digest.reader--f8503d1fd0ee----1-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="DPIVu4sd" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*8vduTedO5l4fEEErpMzsag.jpeg); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@anjanayraina326?source=email-4cbe58367505-1679212103413-digest.reader--f8503d1fd0ee----1-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="Anjanay Raina" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*fgU-yFL94t_0CE0seE6e3A.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@anjanayraina326?source=email-4cbe58367505-1679212103413-digest.reader--f8503d1fd0ee----1-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">Anjanay Raina</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">3 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@anjanayraina326/leetcode-the-road-from-0-to-450-questions-f8503d1fd0ee?source=email-4cbe58367505-1679212103413-digest.reader--f8503d1fd0ee----1-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="DPIVu4sd">Leetcode: The Road from 0 to 450 Questions</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">My journey of learning DSA !!</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@cmanojshrestha/all-about-dark-web-ccce30ed6c37?source=email-4cbe58367505-1679212103413-digest.reader--ccce30ed6c37----2-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="IUzCzpe0" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*FqizRVSeF_-B_k-a6PCp2w.jpeg); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@cmanojshrestha?source=email-4cbe58367505-1679212103413-digest.reader--ccce30ed6c37----2-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="DAEM0N" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*JsFw2zcbKDZd0cnvSkR8FQ.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@cmanojshrestha?source=email-4cbe58367505-1679212103413-digest.reader--ccce30ed6c37----2-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">DAEM0N</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">5 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@cmanojshrestha/all-about-dark-web-ccce30ed6c37?source=email-4cbe58367505-1679212103413-digest.reader--ccce30ed6c37----2-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="IUzCzpe0">All About : Dark Web</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">What is darkweb, What can you find, Step to access, Protective measures, OSINT Tools</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@codecript/first-30-days-on-the-project-as-a-software-engineer-85c100c58e53?source=email-4cbe58367505-1679212103413-digest.reader--85c100c58e53----3-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="dCjKJ1xX" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*S9Irn80Jv2_DK-tC); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@codecript?source=email-4cbe58367505-1679212103413-digest.reader--85c100c58e53----3-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="CodeCript" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*8EuxapYltevLeLTqkOEFaA.png" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@codecript?source=email-4cbe58367505-1679212103413-digest.reader--85c100c58e53----3-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">CodeCript</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">5 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@codecript/first-30-days-on-the-project-as-a-software-engineer-85c100c58e53?source=email-4cbe58367505-1679212103413-digest.reader--85c100c58e53----3-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="dCjKJ1xX">First 30 days as a Software Engineer on the job.</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">So you put enough effort to learn a tech stack, did enough leetcode, cleared interviews, and finally got your…</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@talktorahul.b/become-a-10x-developer-in-seconds-ffa72a6473da?source=email-4cbe58367505-1679212103413-digest.reader--ffa72a6473da----4-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="aGmCjf9R" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/0*X8LmBRPzm2BJNv9r); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@talktorahul.b?source=email-4cbe58367505-1679212103413-digest.reader--ffa72a6473da----4-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="Rahul B" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*27YkCX7s3981lWmGWiiPOg.png" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@talktorahul.b?source=email-4cbe58367505-1679212103413-digest.reader--ffa72a6473da----4-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">Rahul B</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">3 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@talktorahul.b/become-a-10x-developer-in-seconds-ffa72a6473da?source=email-4cbe58367505-1679212103413-digest.reader--ffa72a6473da----4-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="aGmCjf9R">Become a 10x developer in seconds</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">If you are a newbie and wanted to get fast at development, then here are some tips and practices that you…</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@ehoneahobed/the-alx-software-engineering-program-insider-tips-and-tricks-96577a8cc11?source=email-4cbe58367505-1679212103413-digest.reader--96577a8cc11----5-83------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="UieyiyyM" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*lX5wiJfKf1_1l8QqyGuaPQ.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@ehoneahobed?source=email-4cbe58367505-1679212103413-digest.reader--96577a8cc11----5-83------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="Dr. Ehoneah Obed" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*Jt7nMJSEaQjnB58SjXSjQA.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@ehoneahobed?source=email-4cbe58367505-1679212103413-digest.reader--96577a8cc11----5-83------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">Dr. Ehoneah Obed</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">18 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@ehoneahobed/the-alx-software-engineering-program-insider-tips-and-tricks-96577a8cc11?source=email-4cbe58367505-1679212103413-digest.reader--96577a8cc11----5-83------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="UieyiyyM">The ALX Software Engineering Program: Insider Tips and Tricks</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">After going halfway through the ALX Software Engineering program and connecting with several other…</div></a></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@akhlashussain/how-i-got-a-full-time-remote-dev-job-as-a-fresher-960e4afc1b7?source=email-4cbe58367505-1679212103413-digest.reader--960e4afc1b7----6-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" aria-labelledby="NDvZi9AM" style="color: inherit; text-decoration: none;"><div class="ck cl l cm cn co cp cq cr cs ct cu cv cw cx cy cz da db" style="width: 100%; float: left; height: 214px; margin-bottom: 16px; background-image: url(https://miro.medium.com/fit/c/960/960/1*8VaLuFokqrQU8_kQCfd99g.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="l dc dd de" style="width: 100%;"><div class="ay df dg dh" style="margin-bottom: 8px;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@akhlashussain?source=email-4cbe58367505-1679212103413-digest.reader--960e4afc1b7----6-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><img alt="Akhlas Hussain" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*Ej-_QSbVcgjtXQ-QJKIcUA.png" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z dj ab" style="display: inline-block; vertical-align: middle; width: 87%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><b><a href="https://medium.com/@akhlashussain?source=email-4cbe58367505-1679212103413-digest.reader--960e4afc1b7----6-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;">Akhlas Hussain</a></b><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">4 min read</span></div></div></div></div><div class="z dw dx dy dz" style="display: inline-block; margin-left: 0px;"><a href="https://medium.com/@akhlashussain/how-i-got-a-full-time-remote-dev-job-as-a-fresher-960e4afc1b7?source=email-4cbe58367505-1679212103413-digest.reader--960e4afc1b7----6-98------------------68823933_8dca_4b0c_858d_8eb7f376a447-1" style="color: inherit; text-decoration: none;"><div class="ay" style="margin-bottom: 8px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="NDvZi9AM">How I got a Full Time Remote Dev job as a Fresher</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">I will tell you how I got a full-time remote opportunity as a FullStack Developer but first let’s get some…</div></a></div></div></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div><div class="eg eh ei ej ek" style="background-color: #FAFAFA; padding: 20px 27px 40px;"><div class="bo bp" style="margin-bottom: 11px; margin-top: 11px;"><div class="z el ab" style="display: inline-block; vertical-align: middle; width: 60%;"><span class="bq em by at bz" style="color: rgba(41, 41, 41, 1); font-weight: 700; line-height: 24px; text-transform: uppercase; font-size: 16px;">From your following</span></div><div class="z en eo ab" style="display: inline-block; vertical-align: middle; width: 40%; text-align: right;"><a class="ep eq er z es bg et eu ev at ew ex ey ez fa ai fb fc" href="https://medium.com/me/following/people?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="display: inline-block; font-weight: 400; color: rgba(41, 41, 41, 1); text-align: center; border-width: 1px; border-style: solid; box-sizing: border-box; text-decoration: none; padding: 2px 8px; background: 0; border-color: rgba(117, 117, 117, 1); fill: rgba(41, 41, 41, 1); border-radius: 99em; font-size: 13px; line-height: 20px;">Edit who you follow</a></div></div><div class="bm bn l" style="width: 100%; border-bottom: 1px solid rgba(117, 117, 117, 1); height: 0px;"></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@_ericelliott/learning-javascript-from-chatgpt-c0baebc19ae9?source=email-4cbe58367505-1679212103413-digest.reader-c0aeac5284ad-c0baebc19ae9----0-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" aria-labelledby="mixwteHV" style="color: inherit; text-decoration: none;"><div class="z fd fe ff fg cp cq cu cv cz da" style="display: inline-block; float: right; vertical-align: top; height: 100px; width: 100px; background-image: url(https://miro.medium.com/fit/c/960/960/1*Sp9mFyohok4AaThSJoRe0g.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="z fh fi dc dd de" style="display: inline-block; padding-bottom: 12px; width: 72%;"><div class="z fh fj fk fl fm fe" style="display: inline-block; vertical-align: top; padding-bottom: 12px; min-height: 100px;"><a href="https://medium.com/@_ericelliott/learning-javascript-from-chatgpt-c0baebc19ae9?source=email-4cbe58367505-1679212103413-digest.reader-c0aeac5284ad-c0baebc19ae9----0-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><div class="fn" style="margin-bottom: 4px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="mixwteHV">Learning JavaScript from ChatGPT</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">TL;DR — Great, but Can’t Replace Expert Mentors, Yet!</div></a></div><div class="fo fp fq fr" style="width: 138%;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@_ericelliott?source=email-4cbe58367505-1679212103413-digest.reader-c0aeac5284ad-c0baebc19ae9----0-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><img alt="Eric Elliott" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*VZfJFJj5oVmZ5WzlrgSmRg.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z fs ft fu fv ab" style="display: inline-block; vertical-align: middle; width: 85%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><a href="https://medium.com/@_ericelliott?source=email-4cbe58367505-1679212103413-digest.reader-c0aeac5284ad-c0baebc19ae9----0-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><b>Eric Elliott</b></a> in <a href="https://medium.com/javascript-scene?source=email-4cbe58367505-1679212103413-digest.reader-c0aeac5284ad-c0baebc19ae9----0-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;">JavaScript Scene</a><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">13 min read</span></div></div></div></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@irenemmassyy/hooks-every-react-developer-should-know-c0fdbfda33d5?source=email-4cbe58367505-1679212103413-digest.reader--c0fdbfda33d5----1-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" aria-labelledby="6QIKWtp5" style="color: inherit; text-decoration: none;"><div class="z fd fe ff fg cp cq cu cv cz da" style="display: inline-block; float: right; vertical-align: top; height: 100px; width: 100px; background-image: url(https://miro.medium.com/fit/c/960/960/1*Q-d31AU1WPvGqspri4dNWw.png); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="z fh fi dc dd de" style="display: inline-block; padding-bottom: 12px; width: 72%;"><div class="z fh fj fk fl fm fe" style="display: inline-block; vertical-align: top; padding-bottom: 12px; min-height: 100px;"><a href="https://medium.com/@irenemmassyy/hooks-every-react-developer-should-know-c0fdbfda33d5?source=email-4cbe58367505-1679212103413-digest.reader--c0fdbfda33d5----1-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><div class="fn" style="margin-bottom: 4px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="6QIKWtp5">Hooks Every React Developer Should Know</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">React Hooks are a powerful feature introduced in React 16.8 that allow developers to use state and other…</div></a></div><div class="fo fp fq fr" style="width: 138%;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@irenemmassyy?source=email-4cbe58367505-1679212103413-digest.reader--c0fdbfda33d5----1-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><img alt="Irene mmassy" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*KB7kiixdQPyzc_lLYZohuw.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z fs ft fu fv ab" style="display: inline-block; vertical-align: middle; width: 85%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><a href="https://medium.com/@irenemmassyy?source=email-4cbe58367505-1679212103413-digest.reader--c0fdbfda33d5----1-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><b>Irene mmassy</b></a><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">2 min read</span></div></div></div></div></div></div><div class="ca bn l" style="width: 100%; height: 0px; border-bottom: 1px solid rgba(230, 230, 230, 1);"></div></div><div><div class="cb cc cd ce cf cg ch ci cj" style="overflow: hidden; margin-bottom: 20px; margin-top: 20px;"><a href="https://medium.com/@eleftheriabatsou/7-tools-to-improve-your-social-media-presence-as-a-developer-6e92f19af396?source=email-4cbe58367505-1679212103413-digest.reader--6e92f19af396----2-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" aria-labelledby="njGW8b6X" style="color: inherit; text-decoration: none;"><div class="z fd fe ff fg cp cq cu cv cz da" style="display: inline-block; float: right; vertical-align: top; height: 100px; width: 100px; background-image: url(https://miro.medium.com/fit/c/960/960/1*Ah8mES98Vyvq_GUH2QYZGQ.jpeg); background-position: -1% -1%; background-repeat: no-repeat; background-size: cover;"></div></a><div class="z fh fi dc dd de" style="display: inline-block; padding-bottom: 12px; width: 72%;"><div class="z fh fj fk fl fm fe" style="display: inline-block; vertical-align: top; padding-bottom: 12px; min-height: 100px;"><a href="https://medium.com/@eleftheriabatsou/7-tools-to-improve-your-social-media-presence-as-a-developer-6e92f19af396?source=email-4cbe58367505-1679212103413-digest.reader--6e92f19af396----2-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><div class="fn" style="margin-bottom: 4px;"><div class="ai ea eb bt ec bv ed bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); font-size: 22px; line-height: 28px;"><b id="njGW8b6X">7 Tools to Improve Your Social Media Presence as a Developer</b></div></div><div class="ai ef bs bt bu bv bw bx ee at" style="font-weight: 400; color: rgba(41, 41, 41, 1); line-height: 28px; font-size: 20px;">Introduction</div></a></div><div class="fo fp fq fr" style="width: 138%;"><div class="z di ab" style="display: inline-block; vertical-align: middle; margin-right: 12px;"><a href="https://medium.com/@eleftheriabatsou?source=email-4cbe58367505-1679212103413-digest.reader--6e92f19af396----2-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><img alt="Eleftheria Batsou" class="ac ae af ag" src="https://miro.medium.com/fit/c/64/64/1*NaBuBs7Qp2OVyT-MUlXshg.jpeg" width="32" height="32" style="display: block; border-radius: 50%; height: 32px; width: 32px;"></a></div><div class="z fs ft fu fv ab" style="display: inline-block; vertical-align: middle; width: 85%;"><div class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);"><a href="https://medium.com/@eleftheriabatsou?source=email-4cbe58367505-1679212103413-digest.reader--6e92f19af396----2-2------------------68823933_8dca_4b0c_858d_8eb7f376a447-31" style="color: inherit; text-decoration: none;"><b>Eleftheria Batsou</b></a><span class="du dv" style="padding-left: 6px; padding-right: 6px;">·</span><div class="z" style="display: inline-block;"><span class="ai dk dl dm dn do dp dq dr ds dt at" style="font-weight: 400; color: rgba(41, 41, 41, 1);">11 min read</span></div></div></div></div></div></div></div></div><div class="eg fw fx fy fz bg" style="text-align: center; background-color: #FAFAFA; padding: 0px 27px 54px;"><h2 class="ai ga gb gc gd ge gf gg gh gi gj gk gl" style="margin: 0; font-weight: 400; font-family: Georgia, serif; color: rgba(8, 8, 8, 1);">See more of what you like and less of what you don’t.</h2><div class="gm" style="padding-top: 16px;"><a class="ep eq er z es bg gn go gp gq gr gs gt fa ai em by" href="https://medium.com/me/missioncontrol?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="display: inline-block; font-weight: 400; text-align: center; line-height: 24px; font-size: 16px; border-width: 1px; border-style: solid; box-sizing: border-box; text-decoration: none; border-radius: 99em; padding: 9px 20px; background: rgba(26, 137, 23, 1); border-color: rgba(26, 137, 23, 1); color: rgba(255, 255, 255, 1); fill: rgba(255, 255, 255, 1);">Control your recommendations</a></div></div><div class="gv gw gx gy gz ha" style="background-color: rgba(0, 0, 0, 1); border-radius: 0 0 4px 4px; padding: 32px 27px;"><div class="z fh hb hc hd he hf hg" style="display: inline-block; padding-bottom: 12px;"><h2 class="bq em fc gq" style="margin: 0; font-weight: 700; font-size: 16px; line-height: 20px; color: rgba(255, 255, 255, 1);">Read from anywhere.</h2></div><div class="ac hh co hi ct hj cy hk" style="display: block; float: none;"><div class="z hl" style="display: inline-block; padding-right: 12px;"><a class="z" href="https://itunes.apple.com/app/medium-everyones-stories/id828256236?pt=698524&amp;mt=8&amp;source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none; display: inline-block;"><img alt="Get Medium on the App Store" class src="https://miro.medium.com/proxy/1*CXKdDEfFShoF6Azy5V8ZKQ@2x.png" width="120" height="40"></a></div><a class="z" href="https://play.google.com/store/apps/details?id=com.medium.reader&amp;source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none; display: inline-block;"><img alt="Get Medium on Google Play" class src="https://miro.medium.com/proxy/1*D-oULOaPtKR8A1jatsII4w@2x.png" width="134.17" height="40"></a></div><div class="hm hn ho hp" style="padding: 20px 0px;"><div class="bm bn l" style="width: 100%; border-bottom: 1px solid rgba(117, 117, 117, 1); height: 0px;"></div></div><div class="gu" style="clear: both;"><div class="y" style="text-align: left;"><div class="ai fb fc gq" style="font-weight: 400; font-size: 13px; line-height: 20px; color: rgba(255, 255, 255, 1);"><div class>Sent by <a href="https://medium.com/?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: none;">Medium</a><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span>Medium, 548 Market St, PMB 42061, San Francisco, CA 94104</div><a class="hq" href="https://medium.com/me/email-settings/4cbe58367505/f5bebaacfd58?type=social&amp;source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Unsubscribe</a> from this type of email<span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a class="hq" href="https://medium.com/me/email-settings/4cbe58367505/f5bebaacfd58?type=social&amp;preference=2&amp;source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Switch to the Weekly Digest</a><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a class="hq" href="https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Careers</a><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a class="hq" href="https://help.medium.com/hc/en-us?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Help Center</a><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a class="hq" href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Privacy Policy</a><span class="aw ax" style="padding-left: 4px; padding-right: 4px;">·</span><a class="hq" href="https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=email-4cbe58367505-1679212103413-digest.reader-------------------------68823933_8dca_4b0c_858d_8eb7f376a447" style="color: inherit; text-decoration: underline;">Terms of service</a></div></div></div></div></div></div></td></tr></tbody></table></div><img src="https://u1823144.ct.sendgrid.net/wf/open?upn=xrKFsieyB1OkxBbl2v6O4JLhgqTz5yxOvFv8oTP3JnpOEp5YiuV4eaZU6f5Qeuww3-2FwQ8emlbMKSX9HrK3kaKkNb46YOxjPkd4ZR-2BULi9oqUPIr9c-2F-2B0bDf1hnGLj9GvCysUNzmW66ibbCZGuqQ6EdVL7szl2HN1W-2FzimsplEUZU6XvMx3y9D2orGDQ20UCn-2FZBGNXNTvTusMcrHl2yEGt2T-2FM2qtVyYdEJHfycQOWFvnsaCCIO2mo9KixdV9fJ6wU8OvlEhXTQV3bCBpb4BQmegJHkYp90ZgqYIp1S2urUwZkysbWK7iyaDeoOOcCJL-2FxfRX5636TYs6O4c6Ez9fGZtiiTfaY3tQFFiZZOOP1xyorH8a1UiZf1bhbf-2BcdrVOyjF7OI9Lk-2BI2Xu2m4Cc1x9NUJcSi5whEwtMNQAX5yw-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+    </body>
+    </html>
